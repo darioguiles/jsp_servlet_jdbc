@@ -30,6 +30,9 @@ public class GrabarSociosServlet extends HttpServlet {
 
     //MÉTODO PARA RUTAS GET /GrabarSociosServlet
     //PARA LA RUTA /GrabarSociosServlet VA A MOSTRAR LA JSP DE formularioSocio.jsp
+
+
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
