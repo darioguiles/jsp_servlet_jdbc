@@ -17,7 +17,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
         ResultSet rsGenKeys = null;
 
         try {
-            conn = connectDB();
+            conn = connectDB(); //Llamamos al metodo abstracto
 
 
             //1 alternativas comentadas:
@@ -33,20 +33,21 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
 
             int rows = ps.executeUpdate();
             if (rows == 0)
-                System.out.println("INSERT de socio con 0 filas insertadas.");
+                System.out.println("INSERT de socio con 0 filas insertadas."); //Se informa si no hay actualizaciones
 
             rsGenKeys = ps.getGeneratedKeys();
             if (rsGenKeys.next())
-                socio.setSocioId(rsGenKeys.getInt(1));
+                socio.setSocioId(rsGenKeys.getInt(1)); //Recogemos el id y se lo seteamos a socio
 
         } catch (SQLException | ClassNotFoundException  e) {
             e.printStackTrace();
-        } finally {
+        } finally { //Atrapemos o no un error cerramos la DB
             closeDb(conn, ps, rs);
         }
 
     }
 
+    //Metodo para sacar a todos los socios de la DB a una lista de socio
     @Override
     public List<Socio> getAll() {
 
@@ -84,7 +85,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
     }
 
     @Override
-    public Optional<Socio> find(int id) {
+    public Optional<Socio> find(int id) { //Encontrar un socio concreto
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -122,7 +123,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
     }
 
     @Override
-    public void update(Socio socio) {
+    public void update(Socio socio) { //El update ataca a todos los campos
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -154,7 +155,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(int id) { //Borrar un socio de nuestra BD
 
         Connection conn = null;
         PreparedStatement ps = null;

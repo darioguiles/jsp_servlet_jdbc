@@ -17,7 +17,7 @@ import java.util.Optional;
 //1A APROX. PATRÓN MVC -> M(dao, model y bbdd), V(jsp) & C(servlet)
 
 //                      v--NOMBRE DEL SERVLET           v--RUTAS QUE ATIENDE, PUEDE SER UN ARRAY {"/GrabarSociosServlet", "/grabar-socio"}
-@WebServlet(name = "GrabarSociosServlet", value = "/GrabarSociosServlet")
+@WebServlet(name = "GrabarSociosServlet", value = "/GrabarSociosServlet") //Servlet con su etiqueta
 public class GrabarSociosServlet extends HttpServlet {
 
     //EL SERVLET TIENE INSTANCIADO EL DAO PARA ACCESO A BBDD A LA TABLA SOCIO
