@@ -40,7 +40,7 @@ public class GrabarSociosServlet extends HttpServlet {
         //FIJÉMONOS QUE LA RUTA DE LA JSP HA CAMBIADO A DENTRO DE /WEB-INF/
         //POR LO TANTO NO ES ACCESIBLE DIRECTAMENTE, SÓLO A TRAVÉS DE SERVLET
         //MEDIANTE UN RequestDispatcher ----------------v
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/formularioSocio.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/formularioSocioB.jsp");
 
         //SIEMPRE QUE HACEMOS UN RequestDispatcher DEBE MATERIALIZARSE EN UN forward
         //             --------------------------------------------------------|
@@ -86,10 +86,14 @@ public class GrabarSociosServlet extends HttpServlet {
             //                                  V
             request.setAttribute("listado", listado);
 
+            //ESTABLEZCO EL ATRIBUTO DE newSocioID EN EL ÁMBITO DE REQUEST
+            //PARA LANZAR UN MODAL Y UN EFECTO SCROLL EN LA VISTA JSP
+            request.setAttribute("newSocioID", socio.getSocioId() );
+
             //POR ÚLTIMO, REDIRECCIÓN INTERNA PARA LA URL /GrabarSocioServlet A pideNumeroSocio.jsp
             //                                                                      |
             //                                                                      V
-            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/pideNumeroSocio.jsp");
+            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoSociosB.jsp");
         } else {
 
             //El OPTIONAL ESTÁ VACÍO (EMPTY)
@@ -101,7 +105,7 @@ public class GrabarSociosServlet extends HttpServlet {
             //POR ÚLTIMO, REDIRECCIÓN INTERNA PARA LA URL /GrabarSocioServlet A formularioSocio.jsp
             //                                                                      |
             //                                                                      V
-            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/formularioSocio.jsp");
+            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/formularioSocioB.jsp");
         }
 
 
