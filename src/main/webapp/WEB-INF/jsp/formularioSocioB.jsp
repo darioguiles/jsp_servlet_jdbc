@@ -13,7 +13,7 @@
   </div>
 </div>
 <div class="container bg-light">
-  <form method="post" action="GrabarSociosServlet">
+  <form method="post" action="GrabarSociosServlet"> <!-- ESTO NOS INTERESA -->
     <div class="row body mt-2">
       <div class="col-md-6 align-self-center">Nombre</div>
       <div class="col-md-6 align-self-center"><input type="text" name="nombre"/></div>
