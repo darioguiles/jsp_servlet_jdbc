@@ -9,17 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Seguimos mejorando la web">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/BorrarSociosServlet.java" afterDir="false" />
+    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/GrabarSociosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/GrabarSociosServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/UtilServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/UtilServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FormularioEditarSocio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/formularioEditarSocio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/borraSocio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/borraSocio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/formularioSocioB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/formularioSocioB.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/grabaSocio.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +328,7 @@
       <workItem from="1701105202338" duration="8771000" />
       <workItem from="1701184849792" duration="4325000" />
       <workItem from="1701348867796" duration="1480000" />
-      <workItem from="1701415172465" duration="11602000" />
+      <workItem from="1701415172465" duration="12562000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -481,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701344074714</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Proyecto hecho en un 90%">
+      <option name="closed" value="true" />
+      <created>1701430715301</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701430715301</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +507,8 @@
     <MESSAGE value="Más dinamismos jquery" />
     <MESSAGE value="Más dinamismos jquery :D" />
     <MESSAGE value="Seguimos mejorando la web" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seguimos mejorando la web" />
+    <MESSAGE value="Proyecto hecho en un 90%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto hecho en un 90%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -518,7 +520,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/GrabarSociosServlet.java</url>
-          <line>92</line>
+          <line>91</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

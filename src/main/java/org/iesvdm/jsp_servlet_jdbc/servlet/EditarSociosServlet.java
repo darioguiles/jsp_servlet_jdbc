@@ -35,7 +35,7 @@ public class EditarSociosServlet extends HttpServlet {
             //Borro EL SOCIO EN BBDD
             this.socioDAO.update(socio);
 
-            //CARGO TODO EL LISTADO DE SOCIOS DE BBDD CON EL NUEVO
+            //CARGO TODO EL LISTADO DE SOCIOS DE BBDD CON EL SOCIO actualizado
             List<Socio> listado = this.socioDAO.getAll();
 
             request.setAttribute("listado", listado);
